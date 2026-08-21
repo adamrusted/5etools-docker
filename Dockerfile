@@ -16,4 +16,4 @@ RUN echo "<Location /server-status>\n"\
 
 WORKDIR /usr/local/apache2/htdocs/
 RUN chown -R $PUID:$PGID /usr/local/apache2/htdocs
-CMD ["/usr/local/apache2/htdocs","/init.sh"]
+CMD ["/init.sh"]
